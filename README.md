@@ -159,7 +159,7 @@ send_inline_keyboard_multiple("CHAT_ID", "Choose an option:", buttons, 3);
 To create a button that requests the user's location, use the `create_location_request_button` function:
 
 ```c
-create_location_request_button("Send your location");
+create_location_request_button("CHAT_ID" ,"Send your location");
 ```
 
 ### Creating Contact Request Button
@@ -167,7 +167,7 @@ create_location_request_button("Send your location");
 To create a button that requests the user's contact information, use the `create_contact_request_button` function:
 
 ```c
-create_contact_request_button("Send your contact number");
+create_contact_request_button("CHAT_ID" ,"Send your contact number");
 ```
 
 ## Conclusion

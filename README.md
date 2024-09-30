@@ -89,13 +89,7 @@ To send audio from Telegram, call the `send_audio` function:
 send_audio("CHAT_ID", "PATH");
 ```
 
-### Sending a Message to Group
 
-To send a message to a group from Telegram, call the `sendMessageToGroup` function:
-
-```c
-sendMessageToGroup("CHAT_ID", "MESSAGE");
-```
 
 ### Removing User from Group
 

@@ -90,7 +90,6 @@ send_audio("CHAT_ID", "PATH");
 ```
 
 
-
 ### Removing User from Group
 
 To remove a user from a group in Telegram, call the `removeUserFromGroup` function:
@@ -163,6 +162,56 @@ To create a button that requests the user's contact information, use the `create
 ```c
 create_contact_request_button("CHAT_ID" ,"Send your contact number");
 ```
+
+
+### Adding Admin
+
+To add an admin to a group, use the add_admin function:
+
+```c
+add_admin("CHAT_ID", "USER_ID");
+```
+
+### Removing Admin
+
+To remove an admin from a group, use the remove_admin function:
+
+```c
+remove_admin("CHAT_ID", "USER_ID");
+```
+
+### Changing Group Information
+
+To change the group profile picture, name, or description, use the change_group_info function:
+
+```c
+change_group_info("CHAT_ID", "New Group Name", "New Description", "PATH_TO_NEW_PHOTO");
+```
+
+### Getting Group Link
+
+To get the group's invite link, use the get_group_invite_link function:
+
+
+```c
+char *link = get_group_invite_link("CHAT_ID");
+```
+
+### Getting Group Information
+
+To get the information of a group, use the get_group_info function:
+
+
+```c
+get_group_info("CHAT_ID");
+```
+
+
+
+
+
+
+
 
 ## Conclusion
 
